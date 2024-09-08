@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Hackaton</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="h-8 w-auto" src="images/posotivus.svg" alt="Your Company" />
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white  hover:text-black">About
+                                US</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white  hover:text-black">Services</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white  hover:text-black">Use
+                                Cases</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white  hover:text-black">Pricing</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white  hover:text-black">Blogs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+
+                    <!-- Profile dropdown -->
+                    <div class="relative ml-3">
+                        <div>
+                            <button type="button"
+                                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-auto w-auto rounded-md bg-white mt-2" src="images/Button.svg" alt="" />
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page">Dashboard</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section  -->
+    <div class="hero flex mt-20 px-2 sm:px-6 lg:px-8">
+        <div class="text flex-1 ml-96 ">
+            <h1 class="text-4xl ">Navigating the <br> digital landscape <br> for success</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero quos <br> amet ipsum
+                dicta! Totam
+                deleniti unde possimus numquam iure <br> laudantium cumque magnam maxime! Culpa accusantium, commodi
+                <br> eveniet
+                magnam maiores numquam voluptate </p>
+            <button class="mt-4" type="button"><img src="images/book to.svg" alt="" srcset=""></button>
+        </div>
+        <div class="image flex-1 md:flex-col">
+            <img class="h-auto w-96 " src="images/Illustration.png" alt="" srcset="">
+        </div>
+    </div>
+    <!-- hero section  -->
+
+    <!-- mini-card section  -->
+    <div class="flex ml-96 space-x-20 mt-10">
+        <img src="images/amazon.svg" alt="" srcset="">
+        <img src="images/dribble.svg" alt="" srcset="">
+        <img src="images/hubspot.svg" alt="" srcset="">
+        <img src="images/notion.svg" alt="" srcset="">
+        <img src="images/netflex.svg" alt="" srcset="">
+        <img src="images/zoom.svg" alt="" srcset="">
+    </div>
+    <!-- mini-card section  -->
+
+    <!-- services section  -->
+    <div class="flex mt-16 ml-96 space-x-10 items-center">
+        <h1 class="text-4xl">Services</h1>
+        <p class="text-xl">At our digital marketing agency, we offer a range of services to <br> help businesses grow
+            and succeed online. These services include</p>
+    </div>
+    <!-- services section  -->
+
+    <!-- card section  -->
+    <div class="flex ml-96 space-x-14 mt-16">
+        <div class="left flex-1/3 border border-black rounded-3xl relative">
+            <div class="flex">
+                <div>
+                    <h1 class="text-3xl m-6">Search Engine <br> Optimization</h1>
+                    <p class="m-6 mt-10"> <span><img src="images/more.svg" alt=""></span>Learn more</p>
+                </div>
+                <div>
+                    <img class="m-10" src="images/card 1.svg" alt="" srcset="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="right flex-1/3 border border-black rounded-3xl">
+            <div class="flex">
+                <div>
+                    <h1 class="text-3xl m-6">Pay-per-click <br> advertising</h1>
+                    <p class="m-6 mt-10"> <span><img src="images/more.svg" alt=""></span>Learn more</p>
+                </div>
+                <div>
+                    <img class="m-10" src="images/card 2.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card section  -->
+
+    <!-- Our Working section  -->
+    <div class="flex mt-16 ml-96 space-x-10 items-center">
+        <h1 class="text-4xl">Our Working Process </h1>
+        <p class="text-xl">Step-by-Step Guide to Achieving <br> Your Business Goals</p>
+    </div>
+    <!-- Our Working section  -->
+</body>
+
+</html>
