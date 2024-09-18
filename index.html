@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Hackaton</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -171,23 +172,24 @@
 
     <!-- Services Section -->
     <div
-      class="flex flex-col md:flex-row mt-16 space-y-6 md:space-y-0 md:space-x-20 justify-center items-center px-4 text-center md:text-left"
+      class="flex flex-col md:flex-row mt-16 mx-10 space-y-6 md:space-y-0 md:space-x-24 justify-between items-center px-4 text-center md:text-left"
     >
-    <!-- <div class="flex flex-wrap justify-center gap-28 mt-10"> -->
+      <!-- <div class="flex flex-wrap justify-center gap-28 mt-10"> -->
       <h1 class="text-4xl p-1 md:text-5xl font-semibold rounded-md bg-lime-300">
         Our Services
       </h1>
       <p class="text-lg md:text-xl">
         Our digital marketing agency helps businesses grow and succeed online
-        through a <br> range of services including SEO, PPC, social media marketing,
-        and content creation
+        through a <br />
+        range of services including SEO, PPC, social media marketing, and
+        content creation
       </p>
     </div>
     <!-- Services Section -->
 
     <!-- Card Section -->
     <!-- Responsive Card Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-12">
       <!-- Card 1 -->
       <div
         class="border border-gray-300 rounded-2xl p-6 flex items-center justify-between shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
@@ -284,13 +286,35 @@
 
     <!-- Our Working Section -->
     <div
-      class="flex flex-col md:flex-row mt-16 space-y-6 md:space-y-0  md:space-x-40 justify-center items-center px-4 text-center md:text-left"
+      class="flex flex-col md:flex-row mt-10 mx-10 space-y-6 md:space-y-0 md:space-x-40 justify-center items-center px-4 text-center md:text-left"
     >
-      <h1 class="text-3xl md:text-5xl px-2 font-semibold rounded-md bg-lime-300">Process</h1>
+      <h1 class="text-4xl p-1 md:text-5xl font-semibold rounded-md bg-lime-300">
+        Process
+      </h1>
       <p class="text-lg md:text-xl">
         Step-by-Step Guide to Achieving Your Business Goals
       </p>
     </div>
     <!-- Our Working Section -->
+
+    <!-- free proposal  -->
+
+    <div class="max-w-5xl w-full bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
+      <!-- Text Content -->
+      <div class="md:flex-1 text-center md:text-left space-y-4">
+          <h2 class="text-3xl font-bold text-gray-800">Let’s make things happen</h2>
+          <p class="text-gray-600">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+          <button class="bg-black text-white px-5 py-3 rounded-lg font-medium hover:bg-gray-700 transition">
+              Get your free proposal
+          </button>
+      </div>
+
+      <!-- Illustration -->
+      <div class="md:flex-1 mt-8 md:mt-0 flex justify-center md:justify-end">
+          <img src="images/proposal card.svg" alt="Illustration" class="w-3/4 md:w-full max-w-sm">
+      </div>
+  </div>
+  
+    <!-- free proposal  -->
   </body>
 </html>
